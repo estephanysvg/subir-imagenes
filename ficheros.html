@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Subir imagenes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        form {
+            max-width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="file"] {
+            display: block;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Subir imagenes</h1>
+    <form action="ficheros.php" method="post" enctype="multipart/form-data">
+        <label for="archivos">Selecciona imagenes:</label>
+        <input type="file" name="archivos[]" id="archivos" multiple accept=".jpg, .png" />
+        <input type="submit" value="Subir imagenes" />
+    </form>
+</body>
+</html>
